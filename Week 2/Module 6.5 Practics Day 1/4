@@ -1,0 +1,17 @@
+"""
+Inheritance হলো এমন একটি OOP concept যেখানে একটি class 
+অন্য একটি class-এর properties (attribute) এবং methods ব্যবহার করতে পারে।
+"""
+
+
+class Animal:
+    def speak(self):
+        print("Animal can speak")
+
+class Dog(Animal):   # Inheriting Animal class
+    def bark(self):
+        print("Dog barks")
+
+d = Dog()
+d.speak()   # Parent class method
+d.bark()    # Child class method

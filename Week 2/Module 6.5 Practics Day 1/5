@@ -1,0 +1,19 @@
+"""
+Encapsulation হলো data (variable) 
+এবং method কে একসাথে bind করা এবং direct access restrict করা।
+"""
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name      # public
+        self.__age = age      # private
+
+    def get_age(self):
+        return self.__age
+
+p = Person("Zaim", 20)
+
+print(p.name)        # accessible
+print(p.get_age())   # accessible via method
+# print(p.__age)     # Error (private)
