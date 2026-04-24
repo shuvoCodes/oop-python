@@ -1,0 +1,102 @@
+
+                ----------Practice 1: Library Management System----------
+
+1. Create LibraryDatabase class (10 marks)
+
+    Class name: LibraryDatabase
+    Class attribute: book_list (empty list)
+    Class method: add_book() → Book object add করবে
+
+2. Create Book class (10 marks)
+
+Attributes:
+    book_id
+    title
+    author
+    is_available (default = True)
+
+3. Initialize Book Object (10 marks)
+
+    Constructor-এ attribute set করবে
+    Object তৈরি হলে LibraryDatabase.add_book() call হবে
+
+4. issue_book() method (10 marks)
+
+    যদি book available থাকে → is_available = False
+    না থাকলে error দেখাবে
+
+5. return_book() method (10 marks)
+
+    যদি book already returned থাকে → error
+    না হলে is_available = True
+
+6. view_book_info() method (15 marks)
+Display:
+
+    book_id, title, author, availability
+
+7. Menu System (15 marks)
+
+    View All Books
+    Issue Book
+    Return Book
+    Exit
+
+8. Error Handling (10 marks)
+
+    Invalid book ID
+    Already issued
+    Already returned
+
+9. Data Privacy (10 marks)
+    Attributes private/protected করতে হবে
+
+                        ----------Practice 2: Bank Account System----------
+
+1. Create BankDatabase class
+
+    account_list
+    add_account()
+
+2. Create Account class
+
+Attributes:
+    account_number
+    name
+    balance 
+    is_active
+
+3. Constructor কাজ
+
+    Object তৈরি হলে database-এ add হবে
+
+4. deposit() method
+
+    balance increase করবে
+
+5. withdraw() method
+
+    balance check করবে
+    insufficient হলে error
+
+6. deactivate_account()
+
+    is_active = False
+
+7. view_account_info()
+
+    সব info print
+
+8. Menu
+
+    View Accounts
+    Deposit
+    Withdraw
+    Deactivate
+    Exit
+
+9. Error Handling
+
+    Invalid account
+    Withdraw বেশি
+    Inactive account
